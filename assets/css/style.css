@@ -26,7 +26,8 @@ a{
 }
 .wrapper{    
     margin: 0 auto;    
-    max-width: 52vh;
+    width: 42vh;
+    max-width: 100%;
     display: flex;
     flex-direction: column;    
     align-items: center;
@@ -34,6 +35,7 @@ a{
     min-height: 100vh;
 }
 .content{
+    width: 100%;
     padding: 1.6rem;
 }
 
@@ -145,9 +147,18 @@ ol.links li a:hover{
 .cover{
     display: block;
     margin: 0 0 1.6rem;
-    overflow: hidden;    
+    overflow: hidden;
+    position: relative;    
+    padding-top: 100%;    
+    background: rgba(255,255,255,.1);
 }
 .cover img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     transition: transform .3s ease;
 }
 .cover:hover img{
@@ -165,7 +176,8 @@ ol.links li a:hover{
 }
 .logo{
     display: block;
-    max-width: 150px;
+    width: 140px;
+    max-width: 100%;
     flex: none;
 }
 .btn{
