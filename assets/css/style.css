@@ -51,6 +51,7 @@ a{
 }
 .theme-oma .wrapper{
     max-width: 620px;
+    padding: 1.6rem;
 }
 .theme-oma h1{
     margin: 2rem 0;
@@ -95,6 +96,19 @@ ol.links li:last-child::after{
 }
 ol.links li a:hover{
     opacity: .45;
+}
+@media (max-width: 768px){
+    .oma-logo{
+        width: 220px;        
+        max-width: 100%;        
+    }
+    ol.links{
+        flex-direction: column;
+    }
+    ol.links li::after{
+        content: "//";
+        margin-left: 1rem;
+    }
 }
 
 #cs{
@@ -166,6 +180,3 @@ ol.links li a:hover{
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
-
-@media (max-width: 768px){}
-  
