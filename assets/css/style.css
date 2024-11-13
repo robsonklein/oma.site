@@ -45,7 +45,9 @@ a{
     border-radius: 100%;    
 }
 .theme-oma{
+    position: relative;
     text-align: center;
+    overflow: hidden;
 }
 .theme-oma .wrapper{
     max-width: 620px;
@@ -93,6 +95,13 @@ ol.links li:last-child::after{
 }
 ol.links li a:hover{
     opacity: .45;
+}
+
+#cs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 /*-- A Virgo --*/
