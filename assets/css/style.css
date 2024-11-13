@@ -47,11 +47,17 @@ a{
 .theme-oma{
     position: relative;
     text-align: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .theme-oma .wrapper{
-    max-width: 620px;
-    padding: 1.6rem;
+    max-width: 620px;    
+}
+.theme-oma .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    padding: 1.6rem;    
 }
 .theme-oma h1{
     margin: 2rem 0;
@@ -81,7 +87,9 @@ ul.list-service li{
 }
 ol.links{
     display: flex;
-    gap: 1rem;    
+    gap: 1rem;   
+    padding: 0;
+    margin: 0; 
 }
 ol.links li{
     list-style: none;    
@@ -98,6 +106,12 @@ ol.links li a:hover{
     opacity: .45;
 }
 @media (max-width: 768px){
+    /* .theme-oma{
+        overflow: initial;
+    }     */
+    .theme-oma h1{
+        font-size: 1.8rem;
+    }
     .oma-logo{
         width: 220px;        
         max-width: 100%;        
@@ -111,11 +125,20 @@ ol.links li a:hover{
     }
 }
 
-#cs{
+.wrap-wave{
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+#cs{
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /*-- A Virgo --*/
@@ -179,4 +202,12 @@ ol.links li a:hover{
     border-left: 15px solid #fff; /* Define a cor do triângulo */
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
+}
+@media (max-width: 768px){
+    .theme-virgo .wrapper{
+        min-height: initial;
+    }
+    .control{
+        gap: 1rem;
+    }
 }
