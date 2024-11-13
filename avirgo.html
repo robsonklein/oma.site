@@ -24,26 +24,41 @@
     <!-- Estilização -->
     <link rel="stylesheet" href="style.css">
 
+     <!-- Meta Pixel Code -->
+     <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2384822351861391');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2384822351861391&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
-<body class="theme-oma">
+<body>
     <div class="wrapper">
-        <picture class="oma-logo">
-            <img src="static/images/oma-logo.jpg" alt="Outro Mundo Acontece Logo" height="0" width="0">
-        </picture>
-        <h1>Outro Mundo Acontece</h1>
-        <p class="caption">(OMA) é uma produtora independente e espaço cultural em Novo Hamburgo, RS.</p>
-        <ul class="list-service">
-            <li>- eventos</li>
-            <li>- estúdio</li>
-            <li>- produtora musical</li>
-            <li>- mentoria de projetos culturais</li>
-        </ul>
-        <a class="btn-display" href="https://www.instagram.com/outromundonh/" target="_blank" title="Instagram">Instagram | @outromundonh</a>
-        <ol class="links">
-            <li><a href="https://docs.google.com/forms/d/16agSzPWue-rc65GuSNhxfPFN58NoX_086r0m0U0KZMw/viewform?edit_requested=true" target="_blank" title="Cadastro de Bandas 2024">Cadastro de Bandas 2024</a></li>
-            <li><a href="https://open.spotify.com/show/725MHBNhTUdOmIDKjKYWti?si=7e49b85ffeb3473f&nd=1&dlsi=b6d1d4cbced7446c" target="_blank" title="Podcast Vivências Negras">Podcast Vivências Negras</a></li>
-            <li><a href="https://www.youtube.com/channel/UCDwnZoR8DyaV6fxHksJpsNQ" target="_blank" title="Youtube">Youtube</a>            </li>
-        </ol>
+        <div class="content">
+            <a href="https://open.spotify.com/playlist/37i9dQZF1E4z2m3kZpbcq9?si=d922a71550ef4a25" class="cover" target="_blank" title="Play">
+                <img src="static/images/cover.jpg" alt="Cover" height="0" width="0">
+            </a>
+            <article>
+                <h1>Rádio A Virgo</h1>
+                <p>Outro Mundo Acontece</p>
+                <div class="control">
+                    <picture class="logo">
+                        <img src="/static/images/logo.svg" alt="Spotify" height="0" width="0">
+                    </picture>
+                    <a href="https://open.spotify.com/playlist/37i9dQZF1E4z2m3kZpbcq9?si=d922a71550ef4a25" class="btn" title="Play" target="_blank"><div class="play-icon"></div> Play</a>
+                </div>
+            </aside>
+        </div>
     </div>
 </body>
 </html>
