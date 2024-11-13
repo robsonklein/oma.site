@@ -148,8 +148,8 @@ ol.links li a:hover{
 }
 
 /*-- A Virgo --*/
-.theme-virgo{
-    /**/
+.theme-virgo .wrapper{
+    padding: 0;
 }
 .cover{
     display: block;
@@ -180,14 +180,14 @@ ol.links li a:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2rem;
     border-top: 1px solid rgba(255,255,255,.15);
     padding-top: 1.6rem;
     margin-top: 1.6rem;
 }
 .logo{
     display: block;
-    width: 140px;
+    width: 130px;
     max-width: 100%;
     flex: none;
 }
@@ -200,7 +200,7 @@ ol.links li a:hover{
     font-size: 1.2rem;
     background: rgba(255,255,255,.15);
     border-radius: 4px;
-    padding: .32em 1.6em;
+    padding: .32em 1.4em;
     color: #fff;
     transition: all .3s ease;
 }
