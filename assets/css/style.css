@@ -52,7 +52,7 @@ a{
     /* overflow: hidden; */
 }
 .theme-oma .wrapper{
-    max-width: 640px;    
+    width: 640px;    
 }
 .theme-oma .content{
     display: flex;
